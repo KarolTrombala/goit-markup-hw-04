@@ -119,7 +119,7 @@ body {
   
   max-width: 1600px;
   background-image:linear-gradient( to bottom, var(--hero-gradient),
-   var(--hero-gradient)), url('/images/hero_underlay.jpg');
+   var(--hero-gradient)), url('../images/hero_underlay.jpg');
 }
 
 .hero-items {
