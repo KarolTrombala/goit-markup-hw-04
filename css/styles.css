@@ -63,6 +63,11 @@ body {
   color: var(--higlight-color);
 }
 
+.contact {
+  display: flex;
+  gap: 30px;
+}
+
 .header-address,
 .header-phone {
   font-weight: 500;
@@ -71,14 +76,26 @@ body {
   text-decoration: none;
   letter-spacing: 0.02em;
   color: var(--support-color);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header-address:hover,
 .header-phone:hover,
 .header-address:focus,
-.header-phone:focus {
+.header-phone:focus { 
   color: var(--higlight-color);
 }
+
+.contact-icon {
+  fill: var(--support-color);
+}
+
+.contact-icon:hover {
+  fill: var(--higlight-color);
+} 
 
 /* Menu makiety */
 
@@ -103,9 +120,6 @@ body {
   color: var(--higlight-color);
 }
 
-.header-address {
-  margin-right: 50px;
-}
 /* Header makiety */
 
 .section {
