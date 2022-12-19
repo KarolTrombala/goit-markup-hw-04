@@ -10,6 +10,7 @@
   --team-color: #f5f4fa;
   --header-line: #ececec;
   --projects-color: #eeeeee;
+  --hero-gradient: rgba(47, 48, 58, 0.4);
 }
 
 * {
@@ -115,11 +116,10 @@ body {
 .hero {
   background-color: var(--background-color);
   padding: 200px 0;
-  height: 600px;
-  background-image: url('/images/hero-overlay.jpg'), url('/images/hero_underlay.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  
+  max-width: 1600px;
+  background-image:linear-gradient( to bottom, var(--hero-gradient),
+   var(--hero-gradient)), url('/images/hero_underlay.jpg');
 }
 
 .hero-items {
