@@ -66,6 +66,7 @@ body {
 .contact {
   display: flex;
   gap: 30px;
+  fill: currentColor;
 }
 
 .header-address,
@@ -88,14 +89,6 @@ body {
 .header-phone:focus { 
   color: var(--higlight-color);
 }
-
-.contact-icon {
-  fill: var(--support-color);
-}
-
-.contact-icon:hover {
-  fill: var(--higlight-color);
-} 
 
 /* Menu makiety */
 
@@ -176,8 +169,6 @@ body {
 .list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  font-size: 0;
   gap: 30px;
 }
 
@@ -185,6 +176,11 @@ body {
 
 .trumps {
   padding-bottom: 0;
+}
+
+.trumps-icon-box {
+padding: 25px 100px;
+background-color: var(--team-color) ;
 }
 
 .trumps-title {
@@ -195,6 +191,7 @@ body {
   text-transform: uppercase;
   color: var(--main-color);
 
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
