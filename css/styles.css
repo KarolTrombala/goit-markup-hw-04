@@ -446,5 +446,11 @@ display: block;
 background-color: var(--social-icons-background);
 fill: var(--white-color);
 border-radius: 50%;
-/* padding: 12px; */
+padding: 12px;
+height: 44px;
+}
+
+.social-icons-item:hover,
+.social-icons-item:focus {
+  background-color: var(--higlight-color);
 }
