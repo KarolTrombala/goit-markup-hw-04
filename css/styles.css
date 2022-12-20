@@ -4,7 +4,7 @@
   --higlight-color: #2196f3;
   --black-color: #000000;
   --white-color: #ffffff;
-  --footer-link-color: #ffffff 60%;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
   --background-color: #2f303a;
   --box-shadow-color: rgba(0, 0, 0, 0.15);
   --team-color: #f5f4fa;
@@ -12,6 +12,7 @@
   --projects-color: #eeeeee;
   --hero-gradient: rgba(47, 48, 58, 0.4);
   --customers-icon: #AFB1B8;
+  --social-icons-background: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -127,7 +128,7 @@ body {
   
   max-width: 1600px;
   background-image:linear-gradient( to bottom, var(--hero-gradient),
-   var(--hero-gradient)), url('../images/hero_underlay.jpg');
+   var(--hero-gradient)), url('./images/hero_underlay.jpg');
 }
 
 .hero-items {
@@ -206,7 +207,7 @@ border-radius: 4px;
   color: var(--support-color);
 }
 
-/* Czym się zajmujemy  i nagłówek z Nasz zespół */
+/* Czym się zajmujemy, nagłówek z Nasz zespół i nagłówek Nasi klienci */
 
 .works-title,
 .team-title,
@@ -271,9 +272,9 @@ border-radius: 4px;
 
 .customers-box {
   display: block;
-  padding: 16px 32px;
   border: 1px solid var(--customers-icon);
   border-radius: 4px;
+  padding: 16px 32px;
   fill: var(--customers-icon)
 }
 
@@ -371,7 +372,10 @@ border-radius: 4px;
 
 .nav-footer {
   display: flex;
-  flex-direction: column;
+  gap: 70px;
+  padding: 60px 15px;
+
+ 
 }
 
 .footer-logo {
@@ -390,14 +394,13 @@ border-radius: 4px;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.171;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color);
 
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 60px;
+  margin-top: 20px;
   gap: 9px;
 }
 
@@ -419,4 +422,29 @@ border-radius: 4px;
 .footer-address-link-u:hover,
 .footer-address-link-u:focus {
   color: var(--higlight-color);
+}
+
+.social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons-item {
+display: block;
+background-color: var(--social-icons-background);
+fill: var(--white-color);
+border-radius: 50%;
+/* padding: 12px; */
 }
