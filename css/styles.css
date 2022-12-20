@@ -11,6 +11,7 @@
   --header-line: #ececec;
   --projects-color: #eeeeee;
   --hero-gradient: rgba(47, 48, 58, 0.4);
+  --customers-icon: #AFB1B8;
 }
 
 * {
@@ -168,6 +169,7 @@ body {
 
 .list {
   list-style-type: none;
+  justify-content: space-between;
   display: flex;
   gap: 30px;
 }
@@ -180,7 +182,8 @@ body {
 
 .trumps-icon-box {
 padding: 25px 100px;
-background-color: var(--team-color) ;
+background-color: var(--team-color);
+border-radius: 4px;
 }
 
 .trumps-title {
@@ -206,7 +209,8 @@ background-color: var(--team-color) ;
 /* Czym się zajmujemy  i nagłówek z Nasz zespół */
 
 .works-title,
-.team-title {
+.team-title,
+.customers-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -255,6 +259,27 @@ background-color: var(--team-color) ;
   color: var(--support-color);
 
   padding-bottom: 30px;
+}
+
+/* Nasi klienci */
+
+.customers-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers-box {
+  display: block;
+  padding: 16px 32px;
+  border: 1px solid var(--customers-icon);
+  border-radius: 4px;
+  fill: var(--customers-icon)
+}
+
+.customers-box:hover {
+  fill: var(--higlight-color);
+  border-color: var(--higlight-color);
 }
 
 /* Portfolio filters */
