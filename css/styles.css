@@ -132,7 +132,7 @@ body {
       var(--hero-gradient),
       var(--hero-gradient)
     ),
-    url("./images/hero_underlay.jpg");
+    url("../images/hero_underlay.jpg");
 }
 
 .hero-items {
