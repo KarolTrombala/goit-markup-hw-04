@@ -11,7 +11,7 @@
   --header-line: #ececec;
   --projects-color: #eeeeee;
   --hero-gradient: rgba(47, 48, 58, 0.4);
-  --customers-icon: #AFB1B8;
+  --customers-icon: #afb1b8;
   --social-icons-background: rgba(255, 255, 255, 0.1);
 }
 
@@ -88,7 +88,7 @@ body {
 .header-address:hover,
 .header-phone:hover,
 .header-address:focus,
-.header-phone:focus { 
+.header-phone:focus {
   color: var(--higlight-color);
 }
 
@@ -125,10 +125,14 @@ body {
 .hero {
   background-color: var(--background-color);
   padding: 200px 0;
-  
+
   max-width: 1600px;
-  background-image:linear-gradient( to bottom, var(--hero-gradient),
-   var(--hero-gradient)), url('./images/hero_underlay.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      var(--hero-gradient),
+      var(--hero-gradient)
+    ),
+    url("./images/hero_underlay.jpg");
 }
 
 .hero-items {
@@ -182,9 +186,9 @@ body {
 }
 
 .trumps-icon-box {
-padding: 25px 100px;
-background-color: var(--team-color);
-border-radius: 4px;
+  padding: 25px 100px;
+  background-color: var(--team-color);
+  border-radius: 4px;
 }
 
 .trumps-title {
@@ -274,10 +278,10 @@ border-radius: 4px;
 }
 
 .social-link {
-display: block;
-border-radius: 50%;
-padding: 12px;
-height: 44px;
+  display: block;
+  border-radius: 50%;
+  padding: 12px;
+  height: 44px;
 }
 .team-social-link {
   fill: var(--customers-icon);
@@ -290,8 +294,7 @@ height: 44px;
 
 .team-social-link:hover,
 .team-social-link:focus {
- fill: var(--white-color);
-
+  fill: var(--white-color);
 }
 
 /* Nasi klienci */
@@ -307,7 +310,7 @@ height: 44px;
   border: 1px solid var(--customers-icon);
   border-radius: 4px;
   padding: 16px 32px;
-  fill: var(--customers-icon)
+  fill: var(--customers-icon);
 }
 
 .customers-box:hover {
@@ -368,9 +371,8 @@ height: 44px;
 }
 
 .project-card:hover,
-.project-card:focus { 
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-   0px 4px 4px rgba(0, 0, 0, 0.06),
+.project-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -406,8 +408,6 @@ height: 44px;
   display: flex;
   gap: 70px;
   padding: 60px 15px;
-
- 
 }
 
 .footer-logo {
@@ -469,5 +469,5 @@ height: 44px;
 
 .footer-social-link {
   background-color: var(--social-icons-background);
- fill: var(--white-color);
+  fill: var(--white-color);
 }
