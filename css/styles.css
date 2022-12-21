@@ -240,26 +240,58 @@ border-radius: 4px;
   border-radius: 0px;
 }
 
+.team-card-descrip {
+  padding: 30px 0;
+}
+
 .team-card-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
 
-  margin: 30px 99px 10px;
+  margin-bottom: 10px;
 }
 
 .team-card-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--support-color);
 
-  padding-bottom: 30px;
+  margin-bottom: 16px;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-link {
+display: block;
+border-radius: 50%;
+padding: 12px;
+height: 44px;
+}
+.team-social-link {
+  fill: var(--customers-icon);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--higlight-color);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+ fill: var(--white-color);
+
 }
 
 /* Nasi klienci */
@@ -435,22 +467,7 @@ border-radius: 4px;
   margin-bottom: 20px;
 }
 
-.social-icons {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
-
-.social-icons-item {
-display: block;
-background-color: var(--social-icons-background);
-fill: var(--white-color);
-border-radius: 50%;
-padding: 12px;
-height: 44px;
-}
-
-.social-icons-item:hover,
-.social-icons-item:focus {
-  background-color: var(--higlight-color);
+.footer-social-link {
+  background-color: var(--social-icons-background);
+ fill: var(--white-color);
 }
